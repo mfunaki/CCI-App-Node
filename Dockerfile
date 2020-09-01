@@ -5,6 +5,7 @@ FROM mfunaki/cci-img-node
 WORKDIR /node-app
 
 # コンテナへのファイルコピー(destはWORKDIRからの相対パス)
+# testは含めない、node_modulesを含めない等はここで指示
 COPY ./node-app .
 
 # 外部への公開ポート
